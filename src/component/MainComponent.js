@@ -9,7 +9,7 @@ export default class MainComponent extends Component {
             randomImg: "http://i.imgflip.com/1bij.jpg",
             allMemeImgs: [],
             rightText:"",
-            lefttext:""
+            lefttext:"",
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
