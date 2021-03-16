@@ -7,7 +7,9 @@ export default class MainComponent extends Component {
             topText: "",
             bottomText: "",
             randomImg: "http://i.imgflip.com/1bij.jpg",
-            allMemeImgs: []
+            allMemeImgs: [],
+            rightText:"",
+            lefttext:""
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -51,6 +53,20 @@ export default class MainComponent extends Component {
                         placeholder="Bottom Text"
                         value={this.state.bottomText}
                         onChange={this.handleChange}
+                    />
+                     <input 
+                        type="text"
+                        name="leftText"
+                        placeholder="left Text"
+                        value={this.state.leftText}
+                        onChange={this.handleChange}
+                    /> 
+                    <input 
+                        type="text"
+                        name="rightText"
+                        placeholder="right Text"
+                        value={this.state.rightText}
+                        onChange={this.handleChange}
                     /> 
                 
                     <button>Gen</button>
@@ -59,6 +75,10 @@ export default class MainComponent extends Component {
                     <img src={this.state.randomImg} alt="" />
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
+                    <h2 className="left">{this.state.leftText}</h2>
+                    <h2 className="right">{this.state.rightText}</h2>
+                
+
                 </div>
             </div>
         )
