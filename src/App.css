@@ -78,14 +78,7 @@ header > p {
 .meme > .top {
   top: 0;
 }
-.meme > .right{
-  right: 0;
-  top:50%;
-}
-.meme > .left{
-  left: 0;
-  top:45%;
-}
+
 
 .meme-form {
   width: 90%;

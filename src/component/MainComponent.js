@@ -52,20 +52,8 @@ export default class MainComponent extends React.Component {
                         value={this.state.bottomText}
                         onChange={this.handleChange}
                     />
-                     <input 
-                        type="text"
-                        name="leftText"
-                        placeholder="left Text"
-                        value={this.state.leftText}
-                        onChange={this.handleChange}
-                    /> 
-                    <input 
-                        type="text"
-                        name="rightText"
-                        placeholder="right Text"
-                        value={this.state.rightText}
-                        onChange={this.handleChange}
-                    /> 
+                     
+                    
                 
                     <button>Gen</button>
                 </form>
