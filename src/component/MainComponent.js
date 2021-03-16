@@ -78,7 +78,8 @@ export default class MainComponent extends Component {
                     <h2 className="left">{this.state.leftText}</h2>
                     <h2 className="right">{this.state.rightText}</h2>
                 
-
+{/* firsly render method will render and then componentdid mount and then in componenet did mout state has been changes and again render method will render
+ */}
                 </div>
             </div>
         )
