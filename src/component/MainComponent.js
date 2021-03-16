@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default class MainComponent extends React.Component {
+export default class MainComponent extends Component {
     constructor() {
         super()
         this.state = {
@@ -8,6 +8,8 @@ export default class MainComponent extends React.Component {
             bottomText: "",
             randomImg: "http://i.imgflip.com/1bij.jpg",
             allMemeImgs: [],
+            rightText:"",
+            lefttext:""
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -73,7 +75,8 @@ export default class MainComponent extends React.Component {
                     <img src={this.state.randomImg} alt="" />
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
-                   
+                    <h2 className="left">{this.state.leftText}</h2>
+                    <h2 className="right">{this.state.rightText}</h2>
                 
 
                 </div>
